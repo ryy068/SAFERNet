@@ -1,9 +1,9 @@
- # SAFERNet: Attention-guided Efficient Vision Transformer for Student Facial Expression Recognition
-
+ # SAFERNet: Advancing Vision Transformer with Shallow Global Representations coupling Fine-grained Local Features for Student Facial Expression Recognition
+ 
  <img src="https://github.com/ryy068/SAFERNet/blob/main/models/SAFERNet.png" width="710px">
 
  
-Released codes include two plug-and-play modules (SMHSA and Dual Attn FFN). SMHSA enables the model to efficiently and effectively obtain a global representation, and Dual Attn FFN can explicitly aggregate global dependencies between spatial and channel dimensions and refine features.
+The overall architecture of our SAFERNet. (a) SAFERNet starts with a stem CNN module, followed by four stages for constructing the hierarchical feature maps, next to an adaptive pooling layer, and finally, the head module for classification. (b) The SAFER Block contains two new modules, i.e., SMHSA and DAF. SMHSA module consists of three processes, i.e., Super Token Sampling (STS), Multi-Head Self-Attention (MHSA), and Token Upsampling (TU). DAF fuses spatial and channel dimensional dependencies.
 
  ## Installation
 
@@ -17,7 +17,7 @@ We constructed a student FER dataset SAFERD in a classroom setting. The source o
 <img src="https://github.com/ryy068/SAFERNet/blob/main/data/SAFERD.png" width="510px">
 
  ### Other Datasets
-We also evaluated our proposed method on three FER datasets, RAF-DB, KDEF, and ExpW. We use the face alignement codes in [face.evl](https://github.com/ZhaoJ9014/face.evoLVe/#Face-Alignment) to align face images first. Partial examples of aligned FER datasets are shown below.
+We also evaluated our proposed method on other FER datasets. We use the face alignement codes in [face.evl](https://github.com/ZhaoJ9014/face.evoLVe/#Face-Alignment) to align face images. Partial examples of aligned FER datasets are shown below.
 
 <img src="https://github.com/ryy068/SAFERNet/blob/main/data/aligned_FER.png" width="710px">
 
