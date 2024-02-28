@@ -1,9 +1,9 @@
- # SFERNet: Advancing Vision Transformer with Shallow Global Representations coupling Fine-grained Local Features for Student Facial Expression Recognition
+ # SFERNet: Student Facial Expression Recognition using Superpixel-Assisted Global Semantic Enhancement and Fine-Grained Features
  
  <img src="https://github.com/ryy068/SAFERNet/blob/main/models/SFERNet.png" width="710px">
 
  
-The overall architecture of our SFERNet. SFERNet starts with a Mixture of Experts Feature Extractor (MEFE), followed by four stages for constructing the hierarchical feature maps, next to an adaptive pooling layer, and finally, the head module for classification. The SFER Block contains two new modules, i.e., the Superpixel-Aware Attention (SPAA) and the Dual Attention Refinement FFN (DARF). SPAA module consists of three processes, i.e., Superpixel Aggregation (SPA), Multi-Head Self-Attention (MHSA), and Superpixel Upsampling (SPU).
+The overall architecture of our SFERNet. SFERNet starts with a Mixture of Experts Feature Extractor (MEFE), followed by four stages for constructing the hierarchical feature maps, next to an adaptive pooling layer, and finally, the head module for classification. The SFER Block contains two new modules, i.e., the Superpixel-Aware Attention (SPAA) and the Dual Attention Refinement FFN (DARF). SPAA module consists of Superpixel Aggregation (SPA), Multi-Head Self-Attention (MHSA), and Superpixel Upsampling (SPU) three processes.
 
  ## Installation
 
